@@ -8,6 +8,12 @@
 			padding: 0;
 		}
 		
+		#entire {
+			position: absolute;
+			bottom: 30px;
+			width: 100%;
+		}
+		
 		#KOINICHI {
 			margin-top: 15px;
 			width: 777px;
@@ -126,29 +132,30 @@
 	</style>
 </head>
 <body>
-	
-	<center><div id="KOINICHI">
-	<div id="top">
-		<div id="leftantenna" class='antenna'></div>
-		<div id="rightantenna" class='antenna'></div>
-		<div style="clear: both;"></div>
-	</div>
-	<div id="body">
-		<div id="leftarm" class='arm'></div>
-		<div id="face">
-			<div id="lefteye" class='eye'></div> <div id="righteye" class='eye'></div> <div style="clear: both;"></div>
-			<div id="mouth"></div>
+	<div id="entire">
+		<center><div id="KOINICHI">
+		<div id="top">
+			<div id="leftantenna" class='antenna'></div>
+			<div id="rightantenna" class='antenna'></div>
+			<div style="clear: both;"></div>
 		</div>
-		<div id="rightarm" class='arm'></div>
-		<div style="clear: both;"></div>
+		<div id="body">
+			<div id="leftarm" class='arm'></div>
+			<div id="face">
+				<div id="lefteye" class='eye'></div> <div id="righteye" class='eye'></div> <div style="clear: both;"></div>
+				<div id="mouth"></div>
+			</div>
+			<div id="rightarm" class='arm'></div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="bottom">
+			<div id="leftleg" class='leg'></div>
+			<div id="rightleg" class='leg'></div>
+			<div style="clear: both;"></div>
+		</div>
+		</div></center>
+		<div id="ground"></div>
 	</div>
-	<div id="bottom">
-		<div id="leftleg" class='leg'></div>
-		<div id="rightleg" class='leg'></div>
-		<div style="clear: both;"></div>
-	</div>
-	</div></center>
-	<div id="ground"></div>
 </body>
 
 </html>
