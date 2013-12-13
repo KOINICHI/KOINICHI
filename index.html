@@ -65,12 +65,12 @@
 			border-radius: 100%;
 			background-color: #fff;
 			position: relative;
-		}
+		} .eye:hover { box-shadow: 0px 0px 15px #fff; }
 		#lefteye {
 			float: left; 
 			top : 50px;
 			left: 75px;
-		}
+		} 
 		#righteye {
 			float: right; 
 			top : 50px;
@@ -83,7 +83,8 @@
 			width: 70px;
 			height: 60px;
 			background-color: #fff;
-		}
+		} #mouth:hover { box-shadow: 0px 0px 20px #fff; }
+		
 		
 		.arm {
 			border: 15px solid #fff;
@@ -142,8 +143,10 @@
 		<div id="body">
 			<div id="leftarm" class='arm'></div>
 			<div id="face">
-				<div id="lefteye" class='eye'></div> <div id="righteye" class='eye'></div> <div style="clear: both;"></div>
-				<div id="mouth"></div>
+				<div onclick="window.open('https://twitter.com/KOINICHI')" id="lefteye" class='eye'></div>
+				<div onclick="window.open('https://github.com/KOINICHI')" id="righteye" class='eye'></div>
+				<div style="clear: both;"></div>
+				<div onclick="window.open('http://koinichi.tistory.com/')" id="mouth"></div>
 			</div>
 			<div id="rightarm" class='arm'></div>
 			<div style="clear: both;"></div>
