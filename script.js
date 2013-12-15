@@ -60,7 +60,7 @@ function updateMoves()
 	if (keys[39]) { moveKOINICHI(+1); } // move right
 	if (keys[38]) { moveArm(-1); } // arm up
 	if (keys[40]) { moveArm(1); }  // arm down
-	if (keys[32] && !jumping) { // jump
+	if (keys[90] && !jumping) { // jump
 		jumping = true;
 		var jumpDuration = 100;
 		var stepDuration = 10;
