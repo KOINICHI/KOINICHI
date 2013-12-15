@@ -1,161 +1,35 @@
 <html>
 
 <head>
-	<style type="text/css">
-		body { 
-			background-color: rgb(248, 145, 13);
-			margin: 0;
-			padding: 0;
-		}
-		
-		#entire {
-			position: absolute;
-			bottom: 30px;
-			width: 100%;
-		}
-		
-		#KOINICHI {
-			margin-top: 15px;
-			width: 777px;
-			height: 530px;
-		}
-		
-		#top {
-			height: 210px;
-		}
-		.antenna {
-			position: relative;
-			top: 100px;
-			bottom: 0;
-			border: 15px solid #fff;
-			background-color: #fff;
-			width: 300px;
-			border-radius: 25px;
-		}
-		#leftantenna {
-			float: left; 
-			left: 120px;
-			transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-		}
-		#rightantenna {
-			float: right;
-			right: 120px;
-			transform: rotate(-45deg);
-			-ms-transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
-		}
-
-		
-		
-		
-		#body {
-			height: 280px;
-		}
-		#face {
-			border-radius: 15px;
-			border: 30px solid #fff;
-			width: 500px; 
-			height: 225px;
-		}
-		.eye {
-			width: 40px;
-			height: 40px;
-			border-radius: 100%;
-			background-color: #fff;
-			position: relative;
-		} .eye:hover { box-shadow: 0px 0px 15px #fff; }
-		#lefteye {
-			float: left; 
-			top : 50px;
-			left: 75px;
-		} 
-		#righteye {
-			float: right; 
-			top : 50px;
-			right: 75px;
-		}
-		
-		#mouth {
-			position: relative;
-			border-radius: 100%;
-			width: 70px;
-			height: 60px;
-			background-color: #fff;
-		} #mouth:hover { box-shadow: 0px 0px 20px #fff; }
-		
-		
-		.arm {
-			border: 15px solid #fff;
-			background-color: #fff;
-			width: 125px;
-			border-radius: 25px;
-			
-			transform: rotate(-50deg);
-			-ms-transform: rotate(-50deg);
-			-webkit-transform: rotate(-50deg);
-		}
-		
-		#leftarm {
-			position: relative;
-			float: left;
-			margin-top: 20%;
-		}
-		#rightarm {
-			position: relative;
-			float: right;
-			margin-top: -25%;
-		}
-		
-		#bottom {
-			height: 40px;
-		}
-		.leg {
-			position: relative;
-			border: 17px solid #fff;
-			background-color: #fff;
-			height: 10px;
-			width: 0px;
-		}
-		#leftleg {
-			float: left;
-			left: 160px;
-		}
-		#rightleg {
-			float: right;
-			right: 160px;
-		}
-		
-		#ground {
-			border: 15px solid #fff;
-		}
-	</style>
+	<link rel="stylesheet" href="./style.css" type="text/css" />
+	
+	<script type="text/javascript" src="./jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
 	<div id="entire">
-		<center><div id="KOINICHI">
-		<div id="top">
-			<div id="leftantenna" class='antenna'></div>
-			<div id="rightantenna" class='antenna'></div>
-			<div style="clear: both;"></div>
-		</div>
-		<div id="body">
-			<div id="leftarm" class='arm'></div>
-			<div id="face">
-				<div onclick="window.open('https://twitter.com/KOINICHI')" id="lefteye" class='eye'></div>
-				<div onclick="window.open('https://github.com/KOINICHI')" id="righteye" class='eye'></div>
-				<div style="clear: both;"></div>
-				<div onclick="window.open('http://koinichi.tistory.com/')" id="mouth"></div>
+		<center><div id="KOINICHI" style="margin-left: 0px;">
+			<div id="top">
+				<div id="leftantenna" class='antenna float-left'></div>
+				<div id="rightantenna" class='antenna float-right'></div>
+				<div class='clear'></div>
 			</div>
-			<div id="rightarm" class='arm'></div>
-			<div style="clear: both;"></div>
-		</div>
-		<div id="bottom">
-			<div id="leftleg" class='leg'></div>
-			<div id="rightleg" class='leg'></div>
-			<div style="clear: both;"></div>
-		</div>
+			<div id="body">
+				<div id="leftarm" class='arm float-left'></div>
+				<div id="face">
+					<div onclick="window.open('https://twitter.com/KOINICHI')" id="lefteye" class='eye float-left'></div>
+					<div onclick="window.open('https://github.com/KOINICHI')" id="righteye" class='eye float-right'></div>
+					<div style="clear: both;"></div>
+					<div onclick="window.open('http://koinichi.tistory.com/')" id="mouth"></div>
+				</div>
+				<div id="rightarm" class='arm float-right'></div>
+				<div class='clear'></div>
+			</div>
+			<div id="bottom">
+				<div id="leftleg" class='leg float-left'></div>
+				<div id="rightleg" class='leg float-right'></div>
+				<div style="clear: both;"></div>
+			</div>
 		</div></center>
 		<div id="ground"></div>
 	</div>

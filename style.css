@@ -1,0 +1,145 @@
+
+body { 
+	background-color: rgb(248, 145, 13);
+	margin: 0;
+	padding: 0;
+}
+
+
+.float-left {
+	float:left;
+}
+.float-right {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+
+.cp-elem {
+	margin: 10px;
+	font-family: 'Malgun Gothic';
+}
+
+#entire {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#KOINICHI {
+	margin-top: 15px;
+	width: 777px;
+	height: 530px;
+}
+
+#top {
+	height: 210px;
+}
+.antenna {
+	position: relative;
+	top: 100px;
+	bottom: 0;
+	border: 15px solid #fff;
+	background-color: #fff;
+	width: 300px;
+	border-radius: 25px;
+}
+#leftantenna {
+	left: 120px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+#rightantenna {
+	right: 120px;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+
+
+
+#body {
+	height: 280px;
+}
+#face {
+	border-radius: 15px;
+	border: 30px solid #fff;
+	width: 500px; 
+	height: 225px;
+}
+.eye {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: #fff;
+} .eye:hover { box-shadow: 0px 0px 15px #fff; }
+#lefteye {
+	top : 50px;
+	left: 75px;
+} 
+#righteye {
+	top : 50px;
+	right: 75px;
+}
+
+#mouth {
+	position: relative;
+	border-radius: 100%;
+	width: 70px;
+	height: 60px;
+	background-color: #fff;
+} #mouth:hover { box-shadow: 0px 0px 20px #fff; }
+
+
+.arm {
+	border: 15px solid #fff;
+	background-color: #fff;
+	width: 125px;
+	border-radius: 25px;
+	
+	transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	-webkit-transform: rotate(-50deg);
+}
+
+#leftarm {
+	position: relative;
+	margin-top: 20%;
+}
+#rightarm {
+	position: relative;
+	margin-top: -25%;
+}
+
+#bottom {
+	height: 40px;
+}
+.leg {
+	position: relative;
+	border: 17px solid #fff;
+	background-color: #fff;
+	height: 10px;
+	width: 0px;
+}
+#leftleg {
+	left: 160px;
+}
+#rightleg {
+	right: 160px;
+}
+
+#ground {
+	border: 15px solid #fff;
+}
+
+
+#controlpanel {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+}
