@@ -6,8 +6,6 @@ function moveKOINICHI(sign)
 	console.log("new pos: " + pos);
 	KOINICHI.style.marginLeft = pos;
 }
-
-
 function jumpKOINICHI(step)
 {
 	var KOINICHI = document.getElementById("KOINICHI");
@@ -18,18 +16,21 @@ function jumpKOINICHI(step)
 	KOINICHI.style.marginBottom = pos + "px";
 }
 
-
+var keys = {}
+var jumping = false;
 $(document).keydown(function(e) {
 	if (e.which == 37) { moveKOINICHI(-1); } // move Left
 	if (e.which == 39) { moveKOINICHI(+1); } // move Right
-	if (e.which == 32) { // jump
+	if (e.which == 32 && !jumping) { // jump
+		jumping = true;
 		var jumpDuration = 100;
 		var stepDuration = 10;
 		var step=0;
 		var timer = setInterval(function() {
 			jumpKOINICHI(step++);
-			if (step>jumpDuration)
+			if (step>jumpDuration) {
 				clearInterval(timer);
-			} ,stepDuration);
+				jumping = false;
+			}} ,stepDuration);
 	}   
 })
