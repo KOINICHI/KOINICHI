@@ -48,16 +48,20 @@ body {
 	border-radius: 25px;
 }
 #leftantenna {
-	left: 130px;
-	transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	left: 100px;
+	top: 210px;
+	transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
 }
 #rightantenna {
-	right: 130px;
-	transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
+	right: 100px;
+	top: 210px;
+	transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
 }
 
 
@@ -114,6 +118,7 @@ body {
 	margin-left: -3%;
 	transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
 	-webkit-transform-origin: 100% 50%;
 }
 #rightarm {
@@ -122,6 +127,7 @@ body {
 	margin-right: -3%;
 	transform-origin: 0% 50%;
 	-ms-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
 	-webkit-transform-origin: 0% 50%;
 }
 
