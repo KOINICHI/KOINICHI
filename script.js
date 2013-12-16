@@ -13,10 +13,12 @@ function moveArm(sign)
 	
 	var degree        = leftarm.style.Transform;       // Normal
 	var msdegree      = leftarm.style.msTransform;     // MS
+	var mozdegree     = leftarm.style.MozTransform;    // FireFox
 	var webkitdegree  = leftarm.style.WebkitTransform; // Chrome
 	
 	if (degree != undefined)       degree = parseInt(degree.slice(7,-4));
 	if (msdegree != undefined)     degree = parseInt(msdegree.slice(7,-4));
+	if (mozdegree != undefined)    degree = parseInt(mozdegree.slice(7,-4));
 	if (webkitdegree != undefined) degree = parseInt(webkitdegree.slice(7,-4));
 	
 	if (sign < 0) degree = Math.max(MIN_DEG, degree+(5*sign));
@@ -28,6 +30,8 @@ function moveArm(sign)
 	rightarm.style.msTransform = "rotate(" + degree + "deg)"
 	leftarm.style.WebkitTransform  = "rotate(" + degree + "deg)"
 	rightarm.style.WebkitTransform = "rotate(" + degree + "deg)"
+	leftarm.style.MozTransform  = "rotate(" + degree + "deg)"
+	rightarm.style.MozTransform = "rotate(" + degree + "deg)"
 	
 	//console.log("degree : " + degree)
 }
@@ -38,7 +42,9 @@ function jumpKOINICHI(step)
 	$("#KOINICHI").css("margin-bottom", pos)
 	//console.log("new pos: " + pos);
 }
-
+function swingAntenna()
+{
+}
 
 
 var keys = {}
@@ -60,6 +66,7 @@ function updateMoves()
 	if (keys[39]) { moveKOINICHI(+1); } // move right
 	if (keys[38]) { moveArm(-1); } // arm up
 	if (keys[40]) { moveArm(1); }  // arm down
+	if (keys[88]) { swingAntenna(); }
 	if (keys[90] && !jumping) { // jump
 		jumping = true;
 		var jumpDuration = 100;
