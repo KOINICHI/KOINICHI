@@ -29,6 +29,7 @@ body {
 }
 
 #KOINICHI {
+	position: relative;
 	margin-top: 15px;
 	width: 777px;
 	height: 530px;

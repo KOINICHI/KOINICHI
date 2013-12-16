@@ -1,8 +1,8 @@
 function moveKOINICHI(sign)
 {
-	var pos = $("#KOINICHI").css("margin-left")
-	pos = parseInt(pos.slice(0,-2)) + (20*sign) + "px";
-	$("#KOINICHI").css("margin-left", pos)
+	var pos = $("#KOINICHI").css("left")
+	pos = parseInt(pos.slice(0,-2)) + (10*sign) + "px";
+	$("#KOINICHI").css("left", pos)
 	//console.log("new pos: " + pos);
 }
 function moveArm(sign)
