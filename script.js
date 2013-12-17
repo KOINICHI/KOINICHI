@@ -8,8 +8,8 @@ function moveKOINICHI(sign)
 function moveArm(sign)
 {
 	var MAX_DEG = 60, MIN_DEG = -60;
-	var leftarm  = document.getElementById("leftarm");
-	var rightarm = document.getElementById("rightarm");
+	var leftarm  = document.getElementById("left-arm");
+	var rightarm = document.getElementById("right-arm");
 	
 	var degree        = leftarm.style.Transform;       // Normal
 	var msdegree      = leftarm.style.msTransform;     // MS
@@ -46,8 +46,8 @@ function shakeAntenna(step)
 {
 	var MAX_DEG = 60, MIN_DEG = 30, DEF_DEG=45;
 	
-	var leftantenna  = document.getElementById("leftantenna");
-	var rightantenna = document.getElementById("rightantenna");
+	var leftantenna  = document.getElementById("left-antenna");
+	var rightantenna = document.getElementById("right-antenna");
 	
 	var degree        = leftantenna.style.Transform;       // Normal
 	var msdegree      = leftantenna.style.msTransform;     // MS
