@@ -1,5 +1,4 @@
-
-body { 
+﻿body { 
 	background-color: rgb(248, 145, 13);
 	margin: 0;
 	padding: 0;
@@ -23,41 +22,39 @@ body {
 
 #entire {
 	position: absolute;
-	bottom: 30px;
+	bottom: 7px;
 	width: 100%;
 	overflow: hidden;
 }
 
 #KOINICHI {
 	position: relative;
-	margin-top: 15px;
-	width: 777px;
-	height: 530px;
+	margin: 15px auto;
+	width: 140px;
+	height: 135px;
 }
 
 #top {
-	height: 210px;
+	height: 55px;
 }
 .antenna {
 	position: relative;
-	top: 110px;
+	top: 53px;
 	bottom: 0;
 	background-color: #fff;
-	width: 300px;
-	height: 30px;
-	border-radius: 25px;
+	width: 70px;
+	height: 8px;
+	border-radius: 15px;
 }
 #left-antenna {
-	left: 100px;
-	top: 215px;
+	left: 0px;
 	transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
 	-moz-transform-origin: 100% 50%;
 	-webkit-transform-origin: 100% 50%;
 }
 #right-antenna {
-	right: 100px;
-	top: 215px;
+	right: 0px;
 	transform-origin: 0% 50%;
 	-ms-transform-origin: 0% 50%;
 	-moz-transform-origin: 0% 50%;
@@ -68,45 +65,46 @@ body {
 
 
 #body {
-	height: 280px;
+	height: 70px;
 }
 #face {
-	border-radius: 15px;
-	border: 30px solid #fff;
-	width: 500px; 
-	height: 225px;
+    margin: 0px auto;
+	border-radius: 5px;
+	border: 7px solid #fff;
+	width: 139px; 
+	height: 70px;
+    box-sizing: border-box;
 }
 .eye {
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 10px;
+	height: 10px;
 	border-radius: 100%;
 	background-color: #fff;
-} .eye:hover { box-shadow: 0px 0px 15px #fff; }
+} .eye:hover { box-shadow: 0px 0px 10px #fff; }
 #left-eye {
-	top : 50px;
-	left: 75px;
+	top : 13px;
+	left: 18px;
 } 
 #right-eye {
-	top : 50px;
-	right: 75px;
+	top : 13px;
+	right: 19px;
 }
 
 #mouth {
-	position: relative;
+    margin: 10px auto;
 	border-radius: 100%;
-	width: 70px;
-	height: 60px;
+	width: 18px;
+	height: 15px;
 	background-color: #fff;
-	top: 40px;
-} #mouth:hover { box-shadow: 0px 0px 20px #fff; }
+} #mouth:hover { box-shadow: 0px 0px 15px #fff; }
 
 
 .arm {
 	border: none;
 	background-color: #fff;
-	width: 150px;
-	height: 30px;
+	width: 37px;
+	height: 8px;
 	border-radius: 25px;
 	
 	transform: rotate(-50deg);
@@ -114,8 +112,8 @@ body {
 
 #left-arm {
 	position: relative;
-	margin-top: 100px;
-	margin-left: -20px;
+	margin-top: 25px;
+	margin-left: -32px;
 	transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
 	-moz-transform-origin: 100% 50%;
@@ -123,8 +121,8 @@ body {
 }
 #right-arm {
 	position: relative;
-	margin-top: -185px;
-	margin-right: -20px;
+	margin-top: -46px;
+	margin-right: -32px;
 	transform-origin: 0% 50%;
 	-ms-transform-origin: 0% 50%;
 	-moz-transform-origin: 0% 50%;
@@ -132,23 +130,23 @@ body {
 }
 
 #bottom {
-	height: 40px;
+	height: 10px;
 }
 .leg {
 	position: relative;
 	background-color: #fff;
-	height: 44px;
-	width: 34px;
+	height: 10px;
+	width: 8px;
 }
 #left-leg {
-	left: 160px;
+	left: 13px;
 }
 #right-leg {
-	right: 160px;
+	right: 13px;
 }
 
 #ground {
-	height: 30px;
+	height: 8px;
 	background-color: #fff;
 }
 
